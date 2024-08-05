@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+}
+
+header {
+    background-color: #007F73;
+}
+
+header h1 {
+    padding: 18px;
+    text-align: center;
+    color: white;
+}
+
+header p {
+    text-align: center;
+    color: white;
+    margin-bottom: 22px;
+    padding: 0px 90px; 
+}
+
+header nav ul {
+    background-color: #4CCD99;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    padding: 14px 14px 14px 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: linear 0.3s;
+    padding-bottom: 11px;
+}
+
+header nav ul li a:hover {
+    color: black;
+    border-bottom: 3px solid #000; 
+}
+
+main {
+    margin: 9px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .container-content {
+    width: 95%
+}
+
+main .sejarah, .wisata {
+    border: 3px solid black;
+    margin: 20px 0px 20px;
+    padding: 20px;
+    box-shadow: 28px 27px 17px -10px rgba(0,0,0,0.75); 
+    -webkit-box-shadow: 28px 27px 17px -10px rgba(0,0,0,0.75); 
+    -moz-box-shadow: 28px 27px 17px -10px rgba(0,0,0,0.75); 
+    border-radius: 40px;
+    background-color: #FFF455;
+}
+
+h2 {
+    background-color: #FFC700;
+    padding: 7px 9px 10px 30px;
+    border-radius: 30px;
+    /* margin-bottom:  20px; */
+}
+
+img {
+    width: 570px;
+    height: 350px;
+    margin: 15px 40px;
+    width: 92%;
+}
+
+p {
+    text-indent: 11px;
+    margin: 9px;
+    padding: 7px 9px 10px 40px;
+}
+
+h3 {
+    padding: 7px 9px 10px 40px;
+}
+
+aside {
+    box-shadow: 28px 27px 17px -10px rgba(0,0,0,0.75); 
+    -webkit-box-shadow: 28px 27px 17px -10px rgba(0,0,0,0.75); 
+    -moz-box-shadow: 28px 27px 17px -10px rgba(0,0,0,0.75);
+    width: 25%;
+    border-radius: 40px;
+    border: 3px solid black;
+    margin: 20px;
+    height: 635px;
+    background-color: #FFF455;
+}
+
+aside .profil-city {
+    padding: 30px;
+}
+
+aside .profil-city header {
+    background-color: transparent;
+}
+
+aside .profil-city header h2 {
+    background-color: transparent;
+    margin: 12px;
+    text-align: justify;
+}
+
+aside .profil-city header figure img {
+    width: 180px;
+    height: 230px;
+}
+
+aside .profil-city header figure figcaption {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+aside .profil-city section h3 {
+    margin: 9px;
+}
+
+aside .profil-city section table tr th, td {
+    padding: 5px 17px;
+    text-align: left;
+}
+
+footer {
+    background-color: #007F73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5px;
+    text-align: center;
+}
+
+footer .ig, .gh {
+    padding: 18px;
+}
+
+footer .ig  a p, .gh a p {
+    padding-left: 10px;
+}
+
+footer .ig  a, .gh a {
+    text-decoration: none;
+    color: white;
+    transition: ease-out 0.8s;
+}
+
+footer .ig  a i, .gh a i {
+    font-size: 2.2rem;
+}
+
+footer .ig a:hover {
+    color: purple;
+}
+
+footer .gh a:hover {
+    color: black;
+}
+
+@media screen and (max-width: 1300px) {
+    main, .container-content, aside {
+        display: block;
+        width: 95%;
+        margin: 16px;
+    }
+    @media screen and (min-width: 300px) {
+        header {
+            width: 105%;
+        }
+        img {
+            width: 85%;
+        }
+        footer {
+            width: 105%;
+        }
+    }
+}
